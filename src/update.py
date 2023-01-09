@@ -126,6 +126,11 @@ if __name__ == "__main__":
             ,"./imgs/fixedposter5.png" ,cursor)
     # Write video
     cv2.imwrite('./poster.png',texture)   
-    out = cv2.VideoWriter('./poster.mp4',0x7634706d, 15, (TEXTURE_WIDTH, TEXTURE_HEIGHT))    
+    
+    out = cv2.VideoWriter('./poster.mp4',0x7634706d, 15, (TEXTURE_WIDTH, TEXTURE_HEIGHT))
     out.write(texture)
     out.release()
+    cv2.imwrite('./calendar.png',texture[:CALENDAR_WIDTH,:CALENDAR_HEIGHT])   
+    out2 = cv2.VideoWriter('./calendar.mp4',0x7634706d, 15, (CALENDAR_WIDTH, CALENDAR_HEIGHT))
+    out2.write(texture[:CALENDAR_WIDTH,:CALENDAR_HEIGHT])
+    out2.release()
