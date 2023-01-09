@@ -72,7 +72,7 @@ if __name__ == "__main__":
     # Load Web Poster, Calendar
     try:
         cal_path = "./imgs/calendar.png"
-        urllib.request.urlretrieve("http://drive.google.com/uc?export=view&id=1_YTHSPzWmfCclXFEMvUlcxPADR4Bf_wM", cal_path)
+        urllib.request.urlretrieve("https://drive.google.com/uc?export=download&id=1EmWoThq0wxXHIJDKwKfPk7JY1WBM7eUA", cal_path)
         texture = SetImage(texture, cal_path,(0, 0) ,(CALENDAR_WIDTH, CALENDAR_HEIGHT))
     except Exception as e:
         Log.Append("Calendar Update Failed : " + str(e))
