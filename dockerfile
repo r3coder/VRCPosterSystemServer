@@ -1,11 +1,5 @@
-FROM python:3.7.16-slim-bullseye
+FROM python:3.10.6-slim-buster
 
-RUN pip install pydrive
-
-RUN pip install numpy
-
-RUN apt-get update
-
-RUN apt-get install ffmpeg libsm6 libxext6 -y
-
-RUN pip install opencv-python
+RUN pip3 install python-dotenv 
+RUN pip3 install discord-py-interactions
+RUN pip3 install interactions-tasks
