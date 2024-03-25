@@ -20,6 +20,7 @@ If setup is properly done, `./run.sh` will do everything for you. You can `tmux 
 
 Since this enroll system use discord's channel id to separate each enrollment, you many need to use other system as [ticket bot](https://tickettool.xyz/) to setup system.
 
+한국어
 - [Docker 설치](https://docs.docker.com/get-started/)
 - `./db/archive` 폴더를 만들어 주세요.
 - `./db/online` 폴더를 만들어 주세요.
@@ -43,7 +44,7 @@ DISCORD_GUILD=[SERVER ID TO USE]
 5. You'll have to distribute those image using some kind of CDN.
 6. For this system, there is `ImageTextureDownloader` on VRCSDK, which makes user can download image from web.
 
-
+한국어
 1. 유저가 디스코드를 명령 `/포스터신청`을 통해 신청을 합니다.
 2. 봇이 여러 포스터 정보를 물어봅니다.
 3. 등록이 끝나면, 관리자 유저가 이를 승인할지, 거절할지 결정할 수 있습니다.
